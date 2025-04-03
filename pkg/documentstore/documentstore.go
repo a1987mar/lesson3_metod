@@ -34,7 +34,7 @@ func (d Document) Put(doc Document) {
 
 		}
 	}
-	fmt.Println(store)
+
 }
 
 func (d Document) Get(key string) (bool, *Document) {
