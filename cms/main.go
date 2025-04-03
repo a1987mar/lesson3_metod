@@ -28,6 +28,8 @@ func main() {
 
 	t.Put(allDoc)
 
+	///коментар
+
 	//fmt.Println(t.Delete("Name11"))
 
 	//fmt.Println(t.List())
