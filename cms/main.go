@@ -6,33 +6,31 @@ import (
 
 func main() {
 	t := documentstore.Document{}
-	//fmt.Println(t.Get("Name11"))
 
-	allDoc := documentstore.Document{make(map[string]documentstore.DocumentField)}
-	allDoc.Fields["name1"] = documentstore.DocumentField{
-		Type:  documentstore.DocumentFieldTypeString,
-		Value: "setup.exe",
-	}
-	allDoc.Fields["name4"] = documentstore.DocumentField{
-		Type:  documentstore.DocumentFieldTypeString,
-		Value: "event.go",
-	}
-	allDoc.Fields["name3"] = documentstore.DocumentField{
-		Type:  documentstore.DocumentFieldTypeString,
-		Value: "go.txt",
-	}
-	allDoc.Fields["name2"] = documentstore.DocumentField{
-		Type:  documentstore.DocumentFieldTypeBool,
-		Value: true,
-	}
+	// fmt.Println(t.Get("Name6"))
 
-	t.Put(allDoc)
+	// allDoc := documentstore.Document{Fields: make(map[string]documentstore.DocumentField)}
+	// allDoc.Fields["Name1"] = documentstore.DocumentField{
+	// 	Type:  documentstore.DocumentFieldTypeString,
+	// 	Value: "setup.exe",
+	// }
+	// allDoc.Fields["Name4"] = documentstore.DocumentField{
+	// 	Type:  documentstore.DocumentFieldTypeString,
+	// 	Value: "event.go",
+	// }
+	// allDoc.Fields["Name6"] = documentstore.DocumentField{
+	// 	Type:  documentstore.DocumentFieldTypeString,
+	// 	Value: "go.txt",
+	// }
+	// allDoc.Fields["Name2"] = documentstore.DocumentField{
+	// 	Type:  documentstore.DocumentFieldTypeBool,
+	// 	Value: true,
+	// }
 
-	///коментар
+	// t.Put(allDoc)
 
-	//fmt.Println(t.Delete("Name11"))
+	//fmt.Println(t.Delete("Name4"))
 
-	//fmt.Println(t.List())
-
+	fmt.Println(t.List())
 	
 }
